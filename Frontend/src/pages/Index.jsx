@@ -9,7 +9,7 @@ function IndexPage() {
   return (
     <div className="d-flex flex-column justify-content-center align-items-center  gap-5 ">
       <h1 className=''>Sistema de gestión Biblioteca</h1>
-      <h2><a href="https://www.google.com.ar/" target='blank'>Link al código fuente</a></h2>
+      <h2><a href="https://github.com/MaximilianoColombo/Biblioteca" target='blank'>Link al código fuente</a></h2>
     </div>
   )
         

@@ -11,9 +11,12 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "i18next": "^25.0.1",
+    "i18next-browser-languagedetector": "^8.0.5",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
+    "react-i18next": "^15.5.1",
     "react-router-dom": "^6.23.1",
     "vite-react-jsx": "^1.1.2"
   },

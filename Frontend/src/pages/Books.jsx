@@ -2,7 +2,7 @@ import React, {useEffect, useState, useRef} from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import SearchBar from '../components/SearchBar';
 import { getDataList } from '../api/BookAPI';
-import BookTable from '../components/Tables/BookTable';
+import GenericTable from '../components/Tables/GenericTable';
 
 function BooksPage() {
     
@@ -32,8 +32,8 @@ function BooksPage() {
             <SearchBar setState={setFilteredData} searchTerm={"title"} initialData={allItems.current}></SearchBar>
         </Row>
         <Row className='mt-4'>
-            <BookTable listBooks={filteredData}>
-            </BookTable>
+            <GenericTable data={filteredData} >
+            </GenericTable>
         </Row>
         <Row>
 

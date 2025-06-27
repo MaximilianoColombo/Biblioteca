@@ -1,0 +1,47 @@
+# Archivos de Python compilados y cachés
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Archivos de entorno y configuración sensible
+.env
+*.env
+*.ini
+
+# Archivos de base de datos locales
+*.sqlite3
+*.db
+
+# Archivos de logs
+*.log
+
+# Carpeta de migraciones compiladas (no siempre necesario, pero si querés evitar)
+**/migrations/__pycache__/
+**/migrations/*.pyc
+
+# Archivos de sistema y editor
+.DS_Store
+*.swp
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Git y control de versiones
+.git/
+.gitignore
+
+# Carpeta de archivos estáticos recolectados (si usás collectstatic)
+staticfiles/
+static/
+
+# Carpeta media (archivos subidos, no suelen ir en la imagen)
+media/
+
+# Node modules (si tenés frontend en el mismo repo)
+node_modules/
+
+# Archivos temporales
+tmp/
+temp/

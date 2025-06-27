@@ -1,0 +1,37 @@
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: BookStore
+      POSTGRES_USER: pachi
+      POSTGRES_PASSWORD: 123
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  backend:
+    build:
+      context: ./backend
+    # target: final
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+
+  front:
+    build:
+      context: ./frontend
+    # target: final
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+      - db
+
+volumes:
+  pgdata:
+      
